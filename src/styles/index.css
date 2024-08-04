@@ -1,6 +1,6 @@
 .containar_principal {
     background-color: black;
-    font-size: 10vh;
+    font-size: 14vh;
     margin-top: 15px;
     text-align: center;
     padding: 30px;
@@ -10,7 +10,9 @@
     font-weight: 700;
     font-style: normal;
     grid-gap: 20px 20px;
-    
+    justify-content: center;
+
+
 }
 
 
@@ -23,12 +25,12 @@
 .dos,
 .uno {
 
-    
+    height: 20vh;
     background-color: rgb(21, 21, 21);
     color: white;
     border-radius: 20px;
     box-shadow: 3px 5px 5px 4px grey;
-    
-    
+
+
 
 }
