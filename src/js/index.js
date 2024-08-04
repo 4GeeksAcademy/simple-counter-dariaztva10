@@ -8,6 +8,8 @@ import "../styles/index.css";
 //import your own components
 import SecondCounter from "./component/secondCounter";
 
+let number = parseInt(prompt("Ingrese el tiempo en segundos que prefiera: "));
+
 let counter = 0;
 const containerApp = ReactDOM.createRoot(document.getElementById('app'))
 setInterval(() => {
@@ -17,11 +19,14 @@ setInterval(() => {
     const tres = Math.floor(counter / 100);
     const dos = Math.floor(counter / 10);
     const uno = Math.floor(counter / 1);
-    
+
+    if (counter === number + 1) {
+        alert(`Has alcanzado el tiempo de ${number} segundos`)
+    }
     counter++
 
-   containerApp.render(<SecondCounter unos={uno} dos={dos} tres={tres} cuatro={cuatro} cinco={cinco} seis={seis} />);
-
+    containerApp.render(<SecondCounter unos={uno} dos={dos} tres={tres} cuatro={cuatro} cinco={cinco} seis={seis} />);
+    
 
 }, 1000)
 
